@@ -2,3 +2,6 @@ spring:
   elasticsearch:
     rest:
       uris: {elasticsearch 엔드포인트}
+  security:
+    user:
+      name: {spring security 기본 로그인 ID}
