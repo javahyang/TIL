@@ -9,3 +9,6 @@ Today I learn
 * 재시작
 * 하단의 memory indicator 로 확인
 (안 보이는 경우 View -> Appearance -> Status Bar Widgets -> Memory Indicator)
+
+brew cask 로 설치할 때 오류해결
+* brew install --cask adoptopenjdk11
