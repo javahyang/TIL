@@ -12,3 +12,6 @@ Today I learn
 
 brew cask 로 설치할 때 오류해결
 * brew install --cask adoptopenjdk11
+
+java.lang.UnsupportedClassVersionError
+* 컴파일된 자바 버전(상위)과 서버의 자바버전(하위) 다를 때 발생
