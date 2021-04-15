@@ -1,0 +1,16 @@
+# 배열 크기가 2이상인 doc 구하기
+GET /{인덱스명}/_search
+{
+  "query": {
+    "bool": {
+      "filter": {
+        "script": {
+          "script": {
+            "source": "doc['{array 타입의 필드명}.keyword'].length > 1",
+            "lang": "painless"
+          }
+        }
+      }
+    }
+  }
+}
