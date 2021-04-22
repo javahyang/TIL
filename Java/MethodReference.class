@@ -1,0 +1,14 @@
+public class MethodReference {
+  // 출처; 모던 자바 인 액션
+  // 디렉터리에서 모든 숨겨진 파일 필터링하기
+  // 일반버전
+  File[] hiddenFiles = new File(".").listFiles(new FileFilter() {
+    public boolean accept(File file) {
+      return file.isHidden();
+    }
+  });
+
+  // java8 메서드 참조
+  // ::(이 메서드를 값으로 사용하라)
+  File[] hiddenFiles = new File(".").listFiles(File::isHidden);
+}
