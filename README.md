@@ -15,3 +15,8 @@ brew cask 로 설치할 때 오류해결
 
 java.lang.UnsupportedClassVersionError
 * 컴파일된 자바 버전(상위)과 서버의 자바버전(하위) 다를 때 발생
+
+인텔리제이 git auto sync 끊기(auto sync 설정되어 있으면 로컬파일이 자동으로 github에 push된다)
+* 환경설정(command + ,)
+* Tools > Settings Repository
+* Auto Sync 체크 해제
