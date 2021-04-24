@@ -20,3 +20,8 @@ java.lang.UnsupportedClassVersionError
 * 환경설정(command + ,)
 * Tools > Settings Repository
 * Auto Sync 체크 해제
+
+서버에서 심볼릭링크 설정
+```shell
+ln -Tfs {절대경로로된 파일 이름} {절대경로로된 심폴릭 파일 이름}
+```
