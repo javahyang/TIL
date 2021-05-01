@@ -25,3 +25,11 @@ java.lang.UnsupportedClassVersionError
 ```shell
 ln -Tfs {절대경로로된 파일 이름} {절대경로로된 심폴릭 파일 이름}
 ```
+
+콘솔 그룹 설정
+```javascript
+// 그룹 이름은 생략가능
+console.group('그룹이름');
+console.log('그룹에 포함될 콘솔로그');
+console.groupEnd();
+```
