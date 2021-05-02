@@ -1,0 +1,6 @@
+GET /{인덱스명}/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
