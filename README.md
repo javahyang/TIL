@@ -33,3 +33,11 @@ console.group('그룹이름');
 console.log('그룹에 포함될 콘솔로그');
 console.groupEnd();
 ```
+
+오라클DB 캐릭터셋 확인
+```SQL
+select *
+from NLS_DATABASE_PARAMETERS
+where PARAMETER = 'NLS_CHARACTERSET'
+   or PARAMETER = 'NLS_NCHAR_CHARACTERSET';
+```
