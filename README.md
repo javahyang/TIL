@@ -41,3 +41,18 @@ from NLS_DATABASE_PARAMETERS
 where PARAMETER = 'NLS_CHARACTERSET'
    or PARAMETER = 'NLS_NCHAR_CHARACTERSET';
 ```
+
+### npm install, npx create-react-app 안 될 때(실행시간 느림)  
+원인 : proxy 설정 후 다시 npm install 하려고 할 때 오류 발생
+```shell
+npm install
+npm config set proxy http://localhost:8080
+npm install http-proxy-middleware --save
+```
+해결
+```shell
+npm config rm proxy
+npm config rm http-proxy
+npm config set registry https://registry.npmjs.org/
+npm install
+```
