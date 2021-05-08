@@ -42,7 +42,7 @@ where PARAMETER = 'NLS_CHARACTERSET'
    or PARAMETER = 'NLS_NCHAR_CHARACTERSET';
 ```
 
-### npm install, npx create-react-app 안 될 때(실행시간 느림)  
+### npm install, npx create-react-app 안 될 때(실행시간 느림, rollbackfailedoptional verb npm-session)  
 원인 : proxy 설정 후 다시 npm install 하려고 할 때 오류 발생
 ```shell
 npm install
