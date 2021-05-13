@@ -2,3 +2,7 @@
 ``` shell
 git init
 ```
+2. git 설정폴더로 이동
+``` shell
+cd .git
+```
