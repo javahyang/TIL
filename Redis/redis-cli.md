@@ -11,3 +11,5 @@ wget http://download.redis.io/redis-stable.tar.gz && tar xvzf redis-stable.tar.g
 # redis-cli를 bin에 추가해 어느 위치서든 사용 가능하게 등록
 sudo cp src/redis-cli /usr/bin/
 ```
+
+### ec2에서 redis 접속
