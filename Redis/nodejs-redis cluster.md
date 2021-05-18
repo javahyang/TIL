@@ -13,6 +13,7 @@ const Redis = require("ioredis");
 
 const cluster = new Redis.Cluster([
   {
+    // host주소 뒤에 port번호 붙이고 port 값 생략하면 오류
     port: {포트번호},
     host: {master node 호스트주소},
   },
