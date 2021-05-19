@@ -56,3 +56,7 @@ npm config rm http-proxy
 npm config set registry https://registry.npmjs.org/
 npm install
 ```
+
+
+### nGrinder 테스트
+1. war 파일 다운로드 : https://github.com/naver/ngrinder/releases
