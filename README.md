@@ -42,6 +42,14 @@ where PARAMETER = 'NLS_CHARACTERSET'
    or PARAMETER = 'NLS_NCHAR_CHARACTERSET';
 ```
 
+오라클 글자수 확인
+> length : 문자열 길이 / lengthb : 문자열 길이를 바이트 단위로
+```SQL
+SELECT column_name, length(column_name), lengthb(column_name)
+FROM table_name
+ORDER BY lengthb(column_name) DESC;
+```
+
 ### npm install, npx create-react-app 안 될 때(실행시간 느림, rollbackfailedoptional verb npm-session)  
 원인 : proxy 설정 후 다시 npm install 하려고 할 때 오류 발생
 ```shell
