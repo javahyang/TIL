@@ -21,3 +21,6 @@ $str = implode(', ', array_map(function ($item) {
   return "'{$item}'";
 }, $items));
 // 출력: 'a', 'b', 'c', 'd'
+
+// 한글 문자열 인코딩맞춰서 자르기
+iconv_substr($str, 0, 4, 'UTF-8'); // 문자열 $str 을 0 위치에서부터 4글자만큼 UTF-8 인코딩에 맞춰 자른다
