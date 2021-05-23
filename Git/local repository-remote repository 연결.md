@@ -6,3 +6,16 @@ git init
 ``` shell
 cd .git
 ```
+3. config파일에서 레포지토리, 사용자정보 설정
+```shell
+vi config
+
+[remote "origin"]
+        url = {git 레포지토리 주소}
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[init]
+        defaultBranch = main
+[user]
+        name = {git username}
+        email = {git email}
+```        
