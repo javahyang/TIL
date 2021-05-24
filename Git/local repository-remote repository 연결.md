@@ -19,3 +19,7 @@ vi config
         name = {git username}
         email = {git email}
 ```        
+4. 상위 폴더로 이동해서 깃 다시 초기화
+```shell
+git init
+```
