@@ -68,3 +68,37 @@ npm install
 
 ### nGrinder 테스트
 1. war 파일 다운로드 : https://github.com/naver/ngrinder/releases
+
+
+
+### VSCode sftp 오류
+https://github.com/liximomo/vscode-sftp/issues/915#issuecomment-842312488
+```shell
+[05-25 11:15:45] [error] Error: No such file
+    at SFTPStream._transform (/Users/cmedia/.vscode/extensions/liximomo.sftp-1.12.9/node_modules/ssh2-streams/lib/sftp.js:412:27)
+    at SFTPStream.Transform._read (internal/streams/transform.js:205:10)
+    at SFTPStream._read (/Users/cmedia/.vscode/extensions/liximomo.sftp-1.12.9/node_modules/ssh2-streams/lib/sftp.js:183:15)
+    at SFTPStream.Transform._write (internal/streams/transform.js:193:12)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at SFTPStream.Writable.write (internal/streams/writable.js:303:10)
+    at Channel.ondata (internal/streams/readable.js:719:22)
+    at Channel.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Channel.Readable.push (internal/streams/readable.js:223:10)
+    at SSH2Stream.<anonymous> (/Users/cmedia/.vscode/extensions/liximomo.sftp-1.12.9/node_modules/ssh2/lib/Channel.js:167:15)
+    at SSH2Stream.emit (events.js:315:20)
+```
+
+해결: sftp.js 파일 수정
+``` shell
+cd /Users/{username}/.vscode/extensions/liximomo.sftp-1.12.9/node_modules/ssh2-streams/lib
+vi sftp.js
+```
+수정내용 : options.autoDestroy = false; 추가
+```
+ // For backwards compat do not emit close on destroy.
+  options.emitClose = false;
+  // Fix error No such file.
+  options.autoDestroy = false;
+```
