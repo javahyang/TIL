@@ -50,6 +50,15 @@ FROM table_name
 ORDER BY lengthb(column_name) DESC;
 ```
 
+오라클 컬럼 값 더하기. sum 을 쓰는 게 아니다!
+``` SQL
+-- column_name1 + column_name2 순으로 정렬하기
+select *
+from table_name
+  where column_name is not null
+order by (nvl(column_name1, 0) + nvl(column_name2, 0)) desc;
+```
+
 ### npm install, npx create-react-app 안 될 때(실행시간 느림, rollbackfailedoptional verb npm-session)  
 원인 : proxy 설정 후 다시 npm install 하려고 할 때 오류 발생
 ```shell
