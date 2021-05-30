@@ -77,7 +77,10 @@ npm install
 
 ### nGrinder 테스트
 1. war 파일 다운로드 : https://github.com/naver/ngrinder/releases
-2. url 설정
+2. 실행
+```bash
+java -jar ngrinder-controller-{version}.war
+```
 
 
 ### VSCode sftp 오류
