@@ -81,7 +81,11 @@ npm install
 ```bash
 java -jar ngrinder-controller-{version}.war
 ```
-
+3. 관리자 페이지 접속
+```shell
+localhost:8080
+-- ID/PW : admin/admin
+```
 
 ### VSCode sftp 오류
 https://github.com/liximomo/vscode-sftp/issues/915#issuecomment-842312488
