@@ -86,6 +86,7 @@ java -jar ngrinder-controller-{version}.war
 localhost:8080
 -- ID/PW : admin/admin
 ```
+4. 테스트할 URL 입력 후 테스트 시작
 
 ### VSCode sftp 오류
 https://github.com/liximomo/vscode-sftp/issues/915#issuecomment-842312488
