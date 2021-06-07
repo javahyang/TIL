@@ -6,6 +6,12 @@ $result = array_diff($array_A, $array_B);
 // 배열의 교집합
 $result = array_intersect($array_A, $array_B);
 
+// 조건에 맞는 새로운 배열 만들기
+$result = array_reduce($arr, function($curr, $item) {
+  $curr[$item['NAME']] = $item['TOTAL_COUNT'];
+  return $curr;
+}, []);
+
 // 외부xml파일 dom 으로 접근
 $dom = new DomDocument();
 $sxe = simplexml_load_string($xml_str);
