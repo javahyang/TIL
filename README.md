@@ -119,3 +119,10 @@ vi sftp.js
   // Fix error No such file.
   options.autoDestroy = false;
 ```
+
+슬랙 채널에서 bot 또는 사용자 강퇴하기. 슬랙 채널 깃허브 연동해제 <[참고](https://stackoverflow.com/questions/38209815/how-do-i-make-a-slack-bot-leave-a-channel)>
+```
+/remove @botname
+or
+/kick @botkname
+```
