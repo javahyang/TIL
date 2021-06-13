@@ -3,7 +3,7 @@ Today I learn 🎯
 
 [라라벨 슬랙 알람 설정](https://panjeh.medium.com/send-laravel-6-log-to-slack-notification-573a6d95a14e)
 
-인텔리제이 속도 향상
+🖍 인텔리제이 속도 향상
 * Help -> Edit Custom VM Options…
 * Xms(256m), Xmx(2048m) 으로 변경
 * 재시작
