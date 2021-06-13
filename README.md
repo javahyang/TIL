@@ -88,6 +88,8 @@ localhost:8080
 ```
 4. 테스트할 URL 입력 후 테스트 시작
 
+5. 에이전트 다운로드 : 메뉴바의 admin > 에이전트 다운로드
+
 ### VSCode sftp 오류
 https://github.com/liximomo/vscode-sftp/issues/915#issuecomment-842312488
 ```shell
