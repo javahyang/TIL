@@ -90,6 +90,11 @@ localhost:8080
 
 5. 에이전트 다운로드 : 메뉴바의 admin > 에이전트 다운로드
 
+6. 에이전트 실행
+```shell
+sh run_agent.sh
+```
+
 ### VSCode sftp 오류
 https://github.com/liximomo/vscode-sftp/issues/915#issuecomment-842312488
 ```shell
