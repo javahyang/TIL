@@ -95,6 +95,11 @@ localhost:8080
 sh run_agent.sh
 ```
 
+7. 테스트 설정
+* 에이전트별 가상 사용자를 입력하면 프로세스, 쓰레드 값은 자동 계산되어 입력된다. 예) 에이전트별 가상사용자 (99) => 프로세스 (3), 쓰레드 (33)
+* 테스트 기간 또는 실행 횟수를 설정한다.
+* Ramp-Up 사용하면 단계적으로 테스트 대상 서버를 호출한다.
+
 ### VSCode sftp 오류
 https://github.com/liximomo/vscode-sftp/issues/915#issuecomment-842312488
 ```shell
