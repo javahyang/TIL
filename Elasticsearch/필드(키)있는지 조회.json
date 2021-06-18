@@ -1,0 +1,11 @@
+{
+  "query": {
+    "filtered": {
+      "filter": {
+        "exists": {
+          "field": "필드명"
+        }
+      }
+    }
+  }
+}
