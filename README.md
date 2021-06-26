@@ -138,3 +138,8 @@ vi sftp.js
 or
 /kick @botkname
 ```
+
+Mac 에서 암호 최소길이 설정
+``` shell
+pwpolicy -u 계정명 -setpolicy "minChars=8"
+```
